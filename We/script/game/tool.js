@@ -3,8 +3,7 @@ var title = document.getElementById("title");
 var attrBar = document.getElementById("attrBar");
 var feature = document.getElementsByClassName("feature");
 var playersStatu = document.getElementById("playersStatu");
-var titleIsDoMove = false;
-var playersStatuIsDoMove = false;
+var isDoMove = false;
 attrBar.style.left = "50px";
 attrBar.style.top = "50px";
 playersStatu.style.left = "50px";
@@ -17,24 +16,23 @@ playersStatu.onmousedown = function(e)
 		e = window.event; //IE 
 	posX = e.clientX - parseInt(playersStatu.style.left); 
 	posY = e.clientY - parseInt(playersStatu.style.top); 
-	playersStatuIsDoMove = true;
-	console.log(playersStatuIsDoMove);
+	isDoMove = true;
+	console.log(isDoMove);
 } 
 playersStatu.onmouseup = function() {
-	playersStatu.onmousemove = null; 
-	playersStatuIsDoMove = false;
-	console.log(playersStatuIsDoMove);
+	isDoMove = false;
+	console.log(isDoMove);
 } 
 
-playersStatu.onmousemove = function mousemove(e) 
-{ 
-	console.log(playersStatuIsDoMove);
-	if(e==null) 
-		e = window.event;//IE 
-	if(!playersStatuIsDoMove) return;
-	playersStatu.style.left = (e.clientX - posX) + "px"; 
-	playersStatu.style.top = (e.clientY - posY) + "px"; 
-}
+// playersStatu.onmousemove = function mousemove(e) 
+// { 
+// 	console.log(isDoMove);
+// 	if(e == null) 
+// 		e = window.event;//IE 
+// 	if(!isDoMove) return;
+// 	playersStatu.style.left = (e.clientX - posX) + "px"; 
+// 	playersStatu.style.top = (e.clientY - posY) + "px"; 
+// }
 // 属性栏
 title.onmousedown=function(e) 
 { 
@@ -42,19 +40,24 @@ title.onmousedown=function(e)
 		e = window.event; //IE 
 	posX = e.clientX - parseInt(attrBar.style.left); 
 	posY = e.clientY - parseInt(attrBar.style.top); 
-	titleIsDoMove = true;
+	isDoMove = true;
 } 
 title.onmouseup = function() { 
-	title.onmousemove = null; 
-	titleIsDoMove = false;
+	isDoMove = false;
 } 
-attrBar.onmousemove = function mousemove(e) 
+document.onmousemove = function mousemove(e) 
 { 
-	if(!titleIsDoMove) return;
-	if(e==null) 
+	if(!isDoMove) return;
+	if(e == null) 
 		e = window.event;//IE 
-	attrBar.style.left = (e.clientX - posX) + "px"; 
-	attrBar.style.top = (e.clientY - posY) + "px"; 
+	if(e.target === attrBar){
+		attrBar.style.left = (e.clientX - posX) + "px"; 
+		attrBar.style.top = (e.clientY - posY) + "px"; 
+	}
+	else if(e.target === playersStatu){
+		playersStatu.style.left = (e.clientX - posX) + "px"; 
+		playersStatu.style.top = (e.clientY - posY) + "px"; 
+	}
 }
 
 // 关闭按钮
