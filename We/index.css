@@ -1,0 +1,135 @@
+*{
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+}
+#frame{
+	margin: 10px;
+	border: 1px solid black;
+	background-color: #836FFF;
+	width: 1500px;
+	height: 700px;
+}
+#mainInterface{
+	box-sizing: border-box;
+	width: 1500px;
+	height: 610px;
+	background-color: #836FFF;
+}
+#mapInterface{
+	overflow: auto;
+	border: 1px solid black;
+	box-sizing: border-box;
+	margin: 5px;
+	width: 800px;
+	height: 500px;
+}
+#elementInterface{
+	border: 1px solid black;
+	box-sizing: border-box;
+	margin: 5px 5px 5px 0px;
+	left: 810px;
+	width: 300px;
+	height: 600px;
+	background-color: #6495ED;
+}
+#infoInterfaceR{
+	border: 1px solid black;
+	box-sizing: border-box;
+	margin: 5px 5px 5px 0px;
+	left: 1115px;
+	width: 370px;
+	height: 600px;
+	background-color: #6495ED;
+}
+#infoInterfaceD{
+	border: 1px solid black;
+	box-sizing: border-box;
+	margin: 0px 5px 5px 5px;
+	top: 510px;
+	width: 800px;
+	height: 95px;
+	background-color: #6495ED;
+}
+#featuresInterface{
+	border: 1px solid black;
+	box-sizing: border-box;
+	margin: 0px 5px 5px 5px;
+	top: 610px;
+	width: 1480px;
+	height: 85px;
+	background-color: #6495ED;
+}
+.feature{
+	margin: 15px;
+}
+.feature:hover{
+	cursor:pointer;
+}
+#playersStatus{
+	position: relative;
+	margin: 30px;
+	background-color: #CCCCCC;
+	height: 80px;
+	width: 240px;
+	box-sizing: border-box;
+	border: solid black 1px;
+}
+#playersStatus span{
+	font-family: "Microsoft YaHei";
+	position: absolute;
+	margin: 0px;
+	top: -4px;
+	left: -20px;
+}
+#playersStatus img{
+	margin: 0px;
+	top: 15px;
+	left: 35px;
+}
+#HP{
+	position: absolute;
+	border: solid black 1px;
+	box-sizing: border-box;
+	height: 10px;
+	width: 80px;
+	background-color: red;
+	top: 20px;
+	left: 100px;
+}
+#SP{
+	position: absolute;
+	border: solid black 1px;
+	box-sizing: border-box;
+	height: 10px;
+	width: 80px;
+	background-color: blue;
+	top: 40px;
+	left: 100px;
+}
+
+/*物品栏*/
+#itemBar{
+	box-sizing: border-box;
+	border: solid black 1px;
+	background-color: #EBEBEB;
+	width: 300px;
+	height: 400px;
+	z-index: 4;
+}
+#title{
+	width: 100%;
+	height: 20px;
+	background-color: #CCCCCC;
+	box-sizing: border-box;
+	z-index: 5;
+}
+#title a{
+	position: relative;
+	display: block;
+}
+#title img{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
