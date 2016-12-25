@@ -88,13 +88,6 @@
 		<!-- 元素版块 -->
 		<div id="elementInterface">
 		<div id="status">
-			<div id="playersStatus">
-				<div>
-					<img src="./images/player/002.gif">
-					<div id="HP"><span>HP</span></div>
-					<div id="SP"><span>HP</span></div>
-				</div>	
-			</div>
 		</div>
 		<div id="players">
 		</div>	
@@ -105,27 +98,57 @@
 		<div id="infoInterfaceD">  	
 		</div>
 		<div id="featuresInterface"> 
-		<button class="feature" style="left: 800px"><img src="./images/UI/features01.gif" ></button>
-		<button class="feature" style="left: 850px"><img src="./images/UI/features02.gif" ></button>
-		<button class="feature" style="left: 900px"><img src="./images/UI/features03.gif" ></button>
-		<button class="feature" style="left: 950px"><img src="./images/UI/features04.gif" ></button>
-		<button class="feature" style="left: 1000px"><img src="./images/UI/features05.gif" "></button>
-		<button class="feature" style="left: 1050px"><img src="./images/UI/features06.gif" "></button>
-		<button class="feature" style="left: 1100px"><img src="./images/UI/features07.gif" "></button>
-		<button class="feature" style="left: 1150px"><img src="./images/UI/features08.gif" "></button>
+		<a class="feature" style="left: 800px"><img src="./images/UI/features01.gif" ></a>
+		<a class="feature" style="left: 850px"><img src="./images/UI/features02.gif" ></a>
+		<a class="feature" style="left: 900px"><img src="./images/UI/features03.gif" ></a>
+		<a class="feature" style="left: 950px"><img src="./images/UI/features04.gif" ></a>
+		<a class="feature" style="left: 1000px"><img src="./images/UI/features05.gif" "></a>
+		<a class="feature" style="left: 1050px"><img src="./images/UI/features06.gif" "></a>
+		<a class="feature" style="left: 1100px"><img src="./images/UI/features07.gif" "></a>
+		<a class="feature" style="left: 1150px"><img src="./images/UI/features08.gif" "></a>
 		</div>
 	</div>
 </div>
-<div id="itemBar">
+<div id="attrBar">
 	<div id="title">
-		<a href="#">
-			<img src="./images/UI/cross.gif">
-		</a>
+		<p>&nbsp;属性</p>
+		<a class="cross"><img src="./images/UI/cross.gif"></a>
 	</div>
-	<div id="content"></div>
+	<div id="content">
+		<div id="playerAttribute">
+			<table id="name">
+				<tr><td>Hotkang</td></tr>
+				<tr><td>Lv 1</td></tr>
+			</table>
+			<table id="mainAttr">
+				<tr><td>力量:</td><td>力量:</td></tr>
+				<tr><td>魔力:</td><td>力量:</td></tr>
+				<tr><td>敏捷:</td><td>力量:</td></tr>
+				<tr><td>体质:</td><td>力量:</td></tr>
+				<tr><td>智力:</td><td>力量:</td></tr>
+			</table>
+			<table id="equipment">
+				<tr><td>头部:</td><td>Null</td></tr>
+				<tr><td>胸部:</td><td>Null</td></tr>
+				<tr><td>腰部:</td><td>Null</td></tr>
+				<tr><td>手臂:</td><td>Null</td></tr>
+				<tr><td>腿部:</td><td>Null</td></tr>
+				<tr><td>脚部:</td><td>Null</td></tr>
+				<tr><td>左手:</td><td>Null</td></tr>
+				<tr><td>右手:</td><td>Null</td></tr>
+			</table>
+		</div>
+	</div>
+</div>
+<div id="playersStatu">
+	<!-- <div>
+		<img src="./images/player/002.gif">
+		<div id="HP"><span>HP</span></div>
+		<div id="SP"><span>HP</span></div>
+	</div>	 -->
 </div>
 <footer>
-	<script type="text/javascript" src="./script/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="./script/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="./script/map/maoyin.js"></script>
 	<script type="text/javascript" src="./script/game/tool.js"></script>
 	<script type="text/javascript" src="./script/player/player.js"></script>
