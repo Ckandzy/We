@@ -19,3 +19,16 @@
     color: white;
     cursor:pointer;
 }
+.posMask{
+	white-space:nowrap;
+	font-size: 9pt;
+	border: #000000 1px solid;
+	position: absolute;
+	color: #000000;
+	padding-top: 1px; 
+	padding-left: 2px; left: 0px;
+	z-index: 2;
+	line-height: 12pt;
+	top: 0px; padding-right: 2px;
+	background-color: #4CAF50;
+} 

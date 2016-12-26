@@ -49,7 +49,7 @@ function drawNode(maoyin){
 	var $node = $('<div></div>');
 	$node.attr('id', 'nodes');
 	for(var i = 0; i < maoyin.nodeNum; i++){
-		$node.append('<button class=\"pos\" style=\" left: ' + maoyin.nodeArr[i].x + 'px;top:' + maoyin.nodeArr[i].y + 'px\">' + maoyin.nodeArr[i].name + '</button>');
+		$node.append('<button name=\"node\"title=\"' + maoyin.nodeArr[i].name + '\"class=\"pos\" type=\"radio\" style=\" left: ' + maoyin.nodeArr[i].x + 'px;top:' + maoyin.nodeArr[i].y + 'px\">' + maoyin.nodeArr[i].name + '</button>');
 		// $node.append('<div class=\"pos\" style=\"left: 50px\">' + maoyin.nodeArr[i].name + '</div>');
 	}
 	$('#mapInterface').append($node);
@@ -62,4 +62,5 @@ function drawNode(maoyin){
 function maoyinCreat(){
 	var maoyin = maoyinSet();
 	drawNode(maoyin);
+	return maoyin;
 }

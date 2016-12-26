@@ -87,10 +87,15 @@
 		</div>
 		<!-- 元素版块 -->
 		<div id="elementInterface">
-		<div id="status">
+		<div id="areaInfo">	
 		</div>
-		<div id="players">
-		</div>	
+		<div id="elementsInfo">
+		<!-- <dt><a class="monster"><font>[lv1]史莱姆君</font></a><a><img src="./images/UI/a.gif"></a></dt>
+		<dt><a class="monster"><font>[lv1]史莱姆君</font></a><a><img src="./images/UI/a.gif"></a></dt>
+		<dt><a class="monster"><font>[lv2]史莱姆君</font></a><a><img src="./images/UI/a.gif"></a></dt>
+		<dt><a class="monster"><font>[lv1]史莱姆君</font></a><a><img src="./images/UI/a.gif"></a></dt>
+		<dt><a class="monster"><font>[lv3]史莱姆君</font></a><a><img src="./images/UI/a.gif"></a></dt> -->
+		</div>
 		</div>
 		<!-- 信息栏 -->
 		<div id="infoInterfaceR">  	
@@ -109,33 +114,58 @@
 		</div>
 	</div>
 </div>
+<div id="itemBar">
+	<div id="itemTitle">
+		<p>&nbsp;物品栏</p>
+		<a class="cross"><img src="./images/UI/cross.gif"></a>
+	</div>
+	<div id="itemContent">
+		
+	</div>
+</div>
 <div id="attrBar">
-	<div id="title">
+	<div id="attrTitle">
 		<p>&nbsp;属性</p>
 		<a class="cross"><img src="./images/UI/cross.gif"></a>
 	</div>
-	<div id="content">
+	<div id="attrContent">
 		<div id="playerAttribute">
 			<table id="name">
 				<tr><td>Hotkang</td></tr>
 				<tr><td>Lv 1</td></tr>
 			</table>
+			<!-- 主要属性 -->
 			<table id="mainAttr">
-				<tr><td>力量:</td><td>力量:</td></tr>
-				<tr><td>魔力:</td><td>力量:</td></tr>
-				<tr><td>敏捷:</td><td>力量:</td></tr>
-				<tr><td>体质:</td><td>力量:</td></tr>
-				<tr><td>智力:</td><td>力量:</td></tr>
+				<tr><td id="strength">力量:</td><td>抗性:</td></tr>
+				<tr><td id="magic">魔力:</td><td>抗性:</td></tr>
+				<tr><td id="dexterity">敏捷:</td><td>抗性:</td></tr>
+				<tr><td id="constitution">体质:</td><td>抗性:</td></tr>
+				<tr><td id="intelligence">智力:</td><td>抗性:</td></tr>
+			</table>
+			<!-- 衍生属性 -->
+			<table id="derivativeAttr">
+				<tr><td id="smz">生命值：5000</td></tr>
+				<tr><td id="smhf">生命回复：30/s</td></tr>
+				<tr><td id="flz">法力值：3000</td></tr>
+				<tr><td id="smhf">法力回复：30/s</td></tr>
+				<tr><td id="wlsh">物理伤害：250 - 300</td></tr>
+				<tr><td id="fssh">法术伤害：0 - 0</td></tr>
+				<tr><td id="wlshzb">物伤增比：30%</td></tr>
+				<tr><td id="bjsh">暴击伤害：170%</td></tr>
+				<tr><td id="fsshzb">法伤增比：0%</td></tr>
+				<tr><td id="fsjsxs">法术减伤系数：30%</td></tr>
+				<tr><td id="sb">闪避：5%</td></tr>
+				<tr><td id="bj">暴击：5%</td></tr>
 			</table>
 			<table id="equipment">
-				<tr><td>头部:</td><td>Null</td></tr>
-				<tr><td>胸部:</td><td>Null</td></tr>
-				<tr><td>腰部:</td><td>Null</td></tr>
-				<tr><td>手臂:</td><td>Null</td></tr>
-				<tr><td>腿部:</td><td>Null</td></tr>
-				<tr><td>脚部:</td><td>Null</td></tr>
-				<tr><td>左手:</td><td>Null</td></tr>
-				<tr><td>右手:</td><td>Null</td></tr>
+				<tr><td>头部:</td><td><font>码农头盔</font></a></td></tr>
+				<tr><td>胸部:</td><td><font>码农胸甲</font></a></td></tr>
+				<tr><td>腰部:</td><td><font>码农护腰</font></a></td></tr>
+				<tr><td>手臂:</td><td><font>码农护手</font></a></td></tr>
+				<tr><td>腿部:</td><td><font>码农护腿</font></a></td></tr>
+				<tr><td>脚部:</td><td><font>码农之靴</font></a></td></tr>
+				<tr><td>左手:</td><td><font>码农盾</font></a></td></tr>
+				<tr><td>右手:</td><td><font>码农剑</font></a></td></tr>
 			</table>
 		</div>
 	</div>
@@ -152,6 +182,7 @@
 	<script type="text/javascript" src="./script/map/maoyin.js"></script>
 	<script type="text/javascript" src="./script/game/tool.js"></script>
 	<script type="text/javascript" src="./script/player/player.js"></script>
+	<script type="text/javascript" src="./script/player/npc.js"></script>
 	<script type="text/javascript" src="./script/game/main.js"></script>
 </body>
 </html>

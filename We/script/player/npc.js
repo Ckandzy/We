@@ -1,5 +1,5 @@
-function PlayerCreat(){
-	this.name = "包子";
+function SlimeCreat(){
+	this.name = "史莱姆君";
 	this.mapId = 0;
 	this.mapName = "猫隐村";
 	this.nodeId = 8;

@@ -19,7 +19,7 @@
 }
 #mapInterface{
 	position: absolute;
-	overflow: auto;
+	overflow: hidden;
 	border: 1px solid black;
 	box-sizing: border-box;
 	margin: 5px;
@@ -123,7 +123,25 @@
 	left: 100px;
 	z-index: -1;
 }
-
+/*物品栏*/
+#itemBar{
+	font-family: "Microsoft YaHei";
+	position: absolute;
+	box-sizing: border-box;
+	border: solid black 1px;
+	background-color: #EBEBEB;
+	width: 300px;
+	height: 300px;
+	z-index: 4;
+}
+#itemTitle{
+	position: relative;
+	width: 100%;
+	height: 20px;
+	background-color: #CCCCCC;
+	box-sizing: border-box;
+	z-index: 5;
+}
 /*属性栏*/
 #attrBar{
 	font-family: "Microsoft YaHei";
@@ -132,10 +150,10 @@
 	border: solid black 1px;
 	background-color: #EBEBEB;
 	width: 300px;
-	height: 500px;
+	height: auto;
 	z-index: 4;
 }
-#title{
+#attrTitle{
 	position: relative;
 	width: 100%;
 	height: 20px;
@@ -143,13 +161,13 @@
 	box-sizing: border-box;
 	z-index: 5;
 }
-#title p{
+#attrTitle p{
 	position: relative;
 	display: inline;
 	line-height: 150%;
 	font-weight: 500;
 }
-#title:hover{
+#attrTitle:hover{
 	cursor: move;
 }
 .cross{
@@ -161,6 +179,7 @@
 	cursor:pointer;
 }
 
+/*简略信息*/
 #playerAttribute{
 	position: relative;
 }
@@ -169,21 +188,81 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+/*主要属性*/
 #mainAttr{
 	border-top: solid black 1px;
 	line-height: 150%;
 	margin: 10px;
-	font-size: 15px;
-	width: 200px;
+	font-size: 12px;
+	width: 230px;
 	margin-left: auto;
 	margin-right: auto;
 }
+/*衍生属性*/
+#derivativeAttr{
+	white-space:nowrap;
+	border-top: solid black 1px;
+	line-height: 150%;
+	margin: 10px;
+	font-size: 10px;
+	width: 230px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*#derivativeAttr tr{
+	display: inline-block;
+	width: 100px;
+}*/
+/*装备*/
 #equipment{
 	border-top: solid black 1px;
 	line-height: 150%;
 	margin: 10px;
-	font-size: 15px;
-	width: 200px;
+	font-size: 12px;
+	width: 230px;
 	margin-left: auto;
 	margin-right: auto;
+}
+#equipment font{
+	color: #0070dd;
+}
+#equipment font:hover{
+	cursor: pointer;
+	color: black;
+}
+/*地区信息*/
+#areaInfo{
+	position: absolute;
+	box-sizing: border-box;
+	border: solid #436EEE 1px;
+	background-color: #9AC0CD;
+	top: 10px;
+	left: 25px;
+	width: 250px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px; 
+}
+/*元素列表*/
+#elementsInfo{
+	position: absolute;
+	box-sizing: border-box;
+	font-family: "Microsoft YaHei";
+	border: solid #436EEE 1px;
+	background-color: #9AC0CD;
+	top: 70px;
+	left: 25px;
+	width: 250px;
+	height: 300px;
+	padding: 10px;
+}
+#elementsInfo dt{
+	margin: 2px;
+}
+#elementsInfo a{
+	margin-right: 3px;
+}
+#elementsInfo a:hover{
+	color: blue;
+	cursor:pointer;
 }
